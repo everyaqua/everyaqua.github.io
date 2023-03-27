@@ -1,20 +1,12 @@
-let display = document.getElementById('display');
-
-function addToDisplay(value) {
-	display.value += value;
 }
 
-function clearDisplay() {
-	display.value = '';
+function clearResult() {
+	result = '';
+	document.getElementById('result').innerHTML = result;
 }
 
-function calculate() {
-	try {
-		display.value = eval(display.value);
-	} catch (error) {
-		display.value = 'Error';
-	}
+function getResult() {
+	let answer = eval(result);
+	document.getElementById('result').innerHTML = answer;
+	result = answer;
 }
-
-
-
