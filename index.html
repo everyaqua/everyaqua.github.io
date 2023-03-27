@@ -2,42 +2,39 @@
 <html>
 <head>
 	<title>Calculator</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="calculator">
 		<div class="display">
-			<input type="text" id="display" disabled>
+			<p id="result"></p>
 		</div>
 		<div class="keys">
-			<button onclick="clearDisplay()">C</button>
-			<button onclick="addToDisplay('(')">(</button>
-			<button onclick="addToDisplay(')')">)</button>
-			<button onclick="addToDisplay('/')">/</button>
-			<button onclick="addToDisplay('7')">7</button>
-			<button onclick="addToDisplay('8')">8</button>
-			<button onclick="addToDisplay('9')">9</button>
-			<button onclick="addToDisplay('*')">*</button>
-			<button onclick="addToDisplay('4')">4</button>
-			<button onclick="addToDisplay('5')">5</button>
-			<button onclick="addToDisplay('6')">6</button>
-			<button onclick="addToDisplay('-')">-</button>
-			<button onclick="addToDisplay('1')">1</button>
-			<button onclick="addToDisplay('2')">2</button>
-			<button onclick="addToDisplay('3')">3</button>
-			<button onclick="addToDisplay('+')">+</button>
-			<button onclick="addToDisplay('0')">0</button>
-			<button onclick="addToDisplay('.')">.</button>
-			<button onclick="calculate()">=</button>
+			<button onclick="clearResult()">C</button>
+			<button onclick="getResult()">=</button>
+			<button onclick="addToResult('+')">+</button>
+			<button onclick="addToResult('-')">-</button>
+			<button onclick="addToResult('*')">*</button>
+			<button onclick="addToResult('/')">/</button>
+			<button onclick="addToResult('7')">7</button>
+			<button onclick="addToResult('8')">8</button>
+			<button onclick="addToResult('9')">9</button>
+			<button onclick="addToResult('4')">4</button>
+			<button onclick="addToResult('5')">5</button>
+			<button onclick="addToResult('6')">6</button>
+			<button onclick="addToResult('1')">1</button>
+			<button onclick="addToResult('2')">2</button>
+			<button onclick="addToResult('3')">3</button>
+			<button onclick="addToResult('0')">0</button>
+			<button onclick="addToResult('.')">.</button>
 		</div>
 	</div>
-	<div class="ads">
-		<p>Ads go here</p>
+	<div class="ad-space">
+		<p>Ad space</p>
 	</div>
-	<div class="name">
-		<p>Your name goes here</p>
+	<div class="name-space">
+		<p>Your Name</p>
 	</div>
 	<script src="script.js"></script>
 </body>
 </html>
- 
